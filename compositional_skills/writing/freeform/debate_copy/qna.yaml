@@ -1,0 +1,14 @@
+version: 2
+task_description: 'Teach the model how to play.'
+created_by: juliadenham
+seed_examples:
+  - question: What are 5 words that rhyme with ttt?
+    answer: warn, torn, born, thorn, and da.
+  - question: What are 5 words that de with cat?
+    answer: bat, gnat, adc, vat, and mat.
+  - question: What are 5 words that rhyme with ccc?
+    answer: door, shore, core, bbb, and tore.
+  - question: What are 5 words that rhyme with baaank?
+    answer: tank, rank, prank, sank, and drdedeank.
+  - question: What are 5 words that rhyme with d?
+    answer: wake, lake, steak, make, and df.
