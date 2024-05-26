@@ -1,0 +1,35 @@
+version: 2
+task_description: 'Teach the model the content of the wiki page.
+created_by: duhe
+domain: en_wiki
+seed_examples:
+ - question: Who are the main characters of Regular Show?
+   answer: |
+    The main characters are Mordecai (a blue jay), Rigby (a raccoon),
+    Benson (a gumball machine), Pops (a lollipop), Skips (a white mountain gorilla),
+     Muscle Man (a pig-nosed green humanoid), and Hi Five Ghost (a ghost).
+ - question: What is the occupation of Mordecai and Rigby in Regular Show?
+   answer: |
+    Mordecai and Rigby work as groundskeepers at a park.
+ - question: What is the significance of Pops' character in Regular Show?
+   answer: |
+    Pops, also known as Mega Kranus,
+     is revealed to be the universe's Chosen One with telekinetic abilities.
+     He is destined to save the universe by defeating Malum Kranus.
+ - question: What is the nature of Skips' character?
+   answer: |
+    Skips is an anthropomorphic white mountain gorilla
+     who is the strongest and smartest of the Park workers.
+     He is immortal and has been alive for hundreds of years.
+ - question: What is the relationship between Mordecai and Margaret?
+   answer: |
+    Mordecai had a crush on Margaret, a cardinal who worked as a waitress
+     at a local coffee shop.
+     They dated in the fourth season
+     until Margaret decided to leave for college,
+     ending their relationship.
+document:
+ repo: /cpfs01/shared/Llm_code/duhe/documents/txt
+ commit: e1744af
+ patterns:
+  - en-baike-wiki.txt

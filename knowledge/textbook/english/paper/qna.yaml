@@ -1,0 +1,38 @@
+version: 2
+task_description: 'Teach the model the content of the arxiv paper'
+created_by: duhe
+domain: arxiv_paper
+seed_examples:
+ - question: What is the main goal of the research presented in the paper?
+   answer: |
+    The main goal of the research is to carry out
+     a maximum-likelihood weak lensing analysis on
+      a set of SDSS source galaxies located in the GAMA survey regions
+       to derive halo masses for the GAMA galaxy groups and
+        explore the scaling relations between halo mass and various observables.
+ - question: How is the group mass distribution modeled in this research?
+   answer: |
+    The group mass distribution is modeled with an NFW (Navarro-Frenk-White) profile,
+     with a mass-concentration relation fixed by previous simulation results.
+ - question: What are the two mass estimates provided in the G3Cv5 catalogue?
+   answer: |
+    The G3Cv5 catalogue provides two mass estimates:
+     dynamical mass and luminosity mass.
+ - question: How does the research address the issue of systematic uncertainties in mass estimators?
+   answer: |
+    Systematic uncertainties are addressed by using random catalogues to calibrate
+     the method for systematic errors introduced by data cuts and
+      the ignorance of prior distributions.
+       The biases and uncertainties are then applied to the parameters inferred from the real data.
+ - question: What is the significance of the results obtained from the maximum-likelihood weak lensing (MLWL) method?
+   answer: |
+    The MLWL method allows for an efficient use of the information contained
+     in individual galaxy shapes and the intrinsic tightness of
+      each mass-observable relation.
+       It provides a powerful tool for model selection and for diagnosing existing mass estimators,
+        leading to improved mass estimators for galaxy groups.
+document:
+ repo: /cpfs01/shared/Llm_code/duhe/documents/txt
+ commit: e1744af
+ patterns:
+  - en-paper-arxiv.txt
